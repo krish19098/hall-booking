@@ -1,0 +1,8 @@
+services:
+  - name: web
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: node server.js
+    envVars:
+      NODE_ENV: production
+      PORT: 3000
